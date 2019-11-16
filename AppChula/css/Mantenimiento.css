@@ -16,7 +16,7 @@
 }
 body{
     background-size: 120vw 108vh;
-    background-image: url("../img/gim6.jpg");
+    background-image: url("../img/FondoHerramientas2.jpg");
     z-index: -1;
     position: sticky;
     height: 100%;
@@ -32,11 +32,10 @@ body{
     min-height: 100%;
     padding: 20px;
   }
-
   #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: rgba(255, 255, 255, 0.645);
+    background: rgba(255, 255, 255, 0.726);
     padding: 0px;
     width: 95%;
     max-width: 800px;
@@ -48,13 +47,56 @@ body{
     text-align: center;
     margin-top: 30px;
     
-  }
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 
-#cerrar{
-    position:absolute;
+#Titulo{
+    font-size: 56px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    padding :10px;
+}
+
+
+@media screen and (max-width: 473px){
+  
+}
+
+@media screen and   (max-width: 600px){
+  img{
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  /* For tablets: */ 
+  
+  .col-s-1 {width: 3.4%;}
+  .col-s-2 {width: 8.0%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 42.5%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+ #cerrar{
+    /* position:absolute; */
     right: 3px;
     top:1px;
-}
+} 
 
 .ventana{
     background-color:#22A7B6   ;
@@ -70,68 +112,28 @@ body{
     border-radius: 9px;
     position: absolute;
     left:5%;
-    top:22%;
+    top:14%;
     display: none;
     /* background-image: url("../img/Fondo2.jpg"); */
 
 }
-.botones{
-    position: sticky;
-    
-    padding-top:50vh;
-    padding-left: 50vw;
-}
-#aparicion{
-    position: absolute;
-    animation-name: aparicion;
-    animation-duration: 5s;
-}
-
-#header{
-    font-size: 80px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-}
-#sub_header{
-    font-size: 23px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-}
-
-#scope_2{
-    font-size: 15px; 
-}
 
 
-
-#campos{
-    font-size: 14px;
-    font-weight:500;
-    
+#uno{
+    background-color: chartreuse;
 }
-
-#medidaBotones{
-    font-size: 12px;
-    font-weight: 600;
-    
-    /* background-color: aqua; */
+#dos{
+    background-color:coral;
 }
-
-.fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+#columna{
+    padding: 15px;
   }
 
-
-
-  
-#altura{
-    margin-top: 40px;
+.containerLimitIcon{
+    height: 15px;
 }
 
-
-/* bdsiaudbsaiubds */
+#icon{
+    height: 70px;
+    width: 70px;
+}

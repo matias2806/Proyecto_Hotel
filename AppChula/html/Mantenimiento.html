@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<link rel="shorcut icon" type"image/x-icon" href="../img/favicon.ico">
 	<title>Hotel Barbara</title>
-  <!--<link rel="stylesheet" href="../css/hoja1_style.css">-->
-  <!--<link rel="stylesheet" href="fonts/style.css">   cris no lo borres posiblemente no lo use igual-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Mantenimiento.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
 <body >
+<!-- <div class="container"> -->
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <h1 id="Titulo" >Mantenimiento </h1>
+      
+      <div class="ventana" id="vent">
+        </br>
+        <h2>El tecnico esta en camino por favor aguarde hasta que llegue a su habitacion</h2>
+        <hr></br>
+        <h5>- Presione el tilde si el tecnico soluciono el problema</h5>
+        <h5>- Presione la cruz y contactaremos al Gerente Tecnico para que el solucione su problema</h5>
+        <hr>
+        <div class="row" id="columna">
+            <div class="col-s-6">
+              <div id="cerrar"> <a href="javascript:Close()"><img src="../Iconos/cancel.png" id="cerrar"> </a></div>
+            </div>
+            <div class="col-s-6" >
+              <div id="cerrar"> <a href="javascript:Close()"><img src="../Iconos/checked.png" id="cerrar"> </a></div>
+            </div>
+        </div>
+        <hr></br>
+    </div>  
 
-<h1>ACA VA EL CODIGO DE LA PAGINA MANTENIMIENTO</h1>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col-s-8" scope="col"><h3>Profesional</h3></th>
+              <th class="col-s-4" scope="col"><h3>Solicitar</h3></th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                  <h5>Tecnico especializado en la reparacion de cerraduras</h5>
+                </td>
+                <td>
+                    <div class="containerLimitIcon" id="cerrar"> <a href="javascript:Cerrajero()"><img src="../Iconos/doorknob2.png" id="icon"></a></div>
+                </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <h5>Tecnico especializado en la reparacion de Aires acondicionados</h5>
+                  </td>
+                  <td>
+                      <div class="containerLimitIcon" id="cerrar"> <a href="javascript:Cerrajero()"><img src="../Iconos/air-conditioner.png" id="icon"></a></div>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>
+                      <h5>Tecnico en Reparaciones en General</h5>
+                    </td>
+                    <td>
+                        <div class="containerLimitIcon" id="cerrar"> <a href="javascript:Cerrajero()"><img src="../Iconos/drill.png" id="icon"></a></div>
+                    </td>
+                  </tr>
+
+                <tr>
+                    <td>
+                      <h5>Tecnico en Redes informaticas y computacion general</h5>
+                    </td>
+                    <td>
+                        <div class="containerLimitIcon" id="cerrar"><a href="javascript:Cerrajero()"> <img src="../Iconos/router.png" id="icon"></a></div>
+                    </td>
+                  </tr>
+
+                  
+
+                    <tr>
+                        <td>
+                          <h5>Tecnico en Luminaria y circuitos electricos</h5>
+                        </td>
+                        <td>
+                            <div class="containerLimitIcon" id="cerrar"><a href="javascript:Cerrajero()"><img src="../Iconos/desk-lamp.png" id="icon"></a> </div>
+                        </td>
+                      </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+</div>
 
 
+<!-- </div> -->
+
+
+<script>
+    //MODAL ABRE EL MODAL
+    //CLOSE LO CIERRA
+  function Cerrajero(){
+    document.getElementById("vent").style.display="block";
+  }
+  function Close(){
+    document.getElementById("vent").style.display="none";
+  }
+
+  </script>
 </body>
 </html>

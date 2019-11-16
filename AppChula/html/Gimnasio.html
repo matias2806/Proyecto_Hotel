@@ -1,36 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <link rel="shorcut icon" type"image/x-icon" href="../img/favicon.ico">
+  <title>Hotel Barbara</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/gimnasio.css">
-	<title>Hotel Barbara</title>
-  <!--<link rel="stylesheet" href="../css/hoja1_style.css">-->
-  <!--<link rel="stylesheet" href="fonts/style.css">   cris no lo borres posiblemente no lo use igual-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body >
-  <div>
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
-          <div class="col-lg-12" ><h1 type="type">Horarios </h1>
-          <h5>Estas preparado para encontrarte con tu nuevo vos!</h5>
-      </div>
-      <div id="opciones">
-          <div class="row" id="altura">
-              
-            
-              <div class="col-lg-9 col-sm-9">     *nO USAR UN H6 O LO QUE SEA*/                         
-                            
-                  <h1>Crossfit</h1>
-              </div>
 
-              <div class="col-lg-3 col-sm-3"> /*eNCONTRAR UN BUEN DISEÑP DE BOTONES*/
-                  <button>RESERVAR</button>
-                </div>
-          </div>
+<body>
+
+    
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+
+        
+
+      <div class="col-lg-12">
+        <h1 id="header">Horarios </h1>
+        <h5 id="sub_header">Estas preparado para encontrarte con tu nuevo vos!</h5>
       </div>
+      <div class="container" id="opciones">
+        <div class="row" id="altura">
+
+            <div class="ventana" id="vent">
+                </br>
+                <div id="cerrar"> <a href="javascript:Close()"><img src="../Iconos/wrong.png"> </a></div>
+                <h2>Su turno fue reservado con exito!</h2>
+                <hr></br>
+                <h5>Por favor no falte!</h5></br>
+            </div>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" id="scope_2">Desde / Hasta</th>
+                <th scope="col" id="scope_2">Disiplina</th>
+                <th scope="col" id="scope_2">Profesor</th>
+                <th scope="col" id="scope_2">Reservar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="campos">9:00 / 9:45</th>
+                <td id="campos">Crosfit</td>
+                <td id="campos">Dwayne Johnson</td>
+                <td id="campos"> 
+                    <a href="javascript:Modal()"> <button id="medidaBotones" type="button" class="btn btn-warning">Reservar</button> </a>
+                </td>
+              </tr>
+              <tr>
+                <td id="campos">10:00 / 10:45</th>
+                <td id="campos">Yoga</td>
+                <td id="campos">Cristina Celano</td>
+                <td id="campos"><a href="javascript:Modal()"> <button id="medidaBotones" type="button" class="btn btn-warning">Reservar</button> </a>
+                </td>
+              </tr>
+              <tr>
+                <td id="campos">11:00 / 11:45</th>
+                <td id="campos">GAP</td>
+                <td id="campos">Romina Gappeto</td>
+                <td id="campos"><a href="javascript:Modal()"> <button id="medidaBotones" type="button" class="btn btn-warning">Reservar</button> </a>
+                </td>
+              </tr>
+              <tr>
+                <td id="campos">13:00 / 13:45</th>
+                <td id="campos">Kangoo Jump</td>
+                <td id="campos">Marcela Avalos</td>
+                <td id="campos"><a href="javascript:Modal()"> <button id="medidaBotones" type="button" class="btn btn-warning">Reservar</button> </a>
+                </td>
+              </tr>
+              <tr>
+                <td id="campos">14:00 / 14:45</th>
+                <td id="campos">Boxeo</td>
+                <td id="campos">Matias Palmieri</td>
+                <td id="campos"><a href="javascript:Modal()"> <button id="medidaBotones" type="button" class="btn btn-warning">Reservar</button> </a>
+                </td>
+              </tr>
+              <tr>
+                <td id="campos">17:00 / 17:45</th>
+                <td id="campos">Zumba</td>
+                <td id="campos">Mauricio Fernandez</td>
+                <td id="campos"><a href="javascript:Modal()"> <button id="medidaBotones" type="button" class="btn btn-warning">Reservar</button> </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
+
+
+  <script>
+    //MODAL ABRE EL MODAL
+    //CLOSE LO CIERRA
+  function Modal(){
+    document.getElementById("vent").style.display="block";
+  }
+
+  function Close(){
+    document.getElementById("vent").style.display="none";
+  }
+  </script>
+
+
 </body>
+
 </html>
